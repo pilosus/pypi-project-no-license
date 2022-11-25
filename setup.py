@@ -6,11 +6,11 @@ current_dir = Path(__file__).resolve().parent
 try:
     readme = current_dir.joinpath("README.md").read_text()
 except FileNotFoundError:
-    readme = "PyPI minimal project with no"
+    readme = "PyPI minimal project with no license"
 
 setup(
     name="pypi-project-no-license",
-    version="0.1.0",
+    version="0.1.1",
     author="pilosus",
     author_email="vrs@pilosus.org",
     packages=["pypi_project_no_license"],
